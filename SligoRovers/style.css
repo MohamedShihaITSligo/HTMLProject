@@ -4,10 +4,14 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
-body{
+
+body
+{
     background-color: #464646;
 }
-heading {
+
+heading 
+{
     width: 100%;
 }
 
@@ -21,7 +25,8 @@ heading img
     padding-left: 10px;
 }
 
-heading h1{
+heading h1
+{
     color: darkred;
     padding: 13px 10px 0px 10px ;
     margin-bottom: 0px;
@@ -29,7 +34,8 @@ heading h1{
     text-align: right;
 }
 
-heading h2{
+heading h2
+{
     color: darkred;
     margin-left: 100px;
     margin-top : 0px;
@@ -43,6 +49,7 @@ menu
 {
     padding: 0;
     margin: 0;
+    height: 75px
 }
 
 .topnav 
@@ -50,8 +57,7 @@ menu
     overflow: hidden;
     background-color: #333;
     width: 100%;
-    max-width: 100%;
-    padding: 0;
+    padding: 1px;
     margin: 0;
 }
 
@@ -91,23 +97,26 @@ main
     padding-top: 10px;
 }
 
-article{
-    float: left;
+article
+{
     background-color: 	dimgray;
-    width: 100%;
-    max-width: 150%;
-    margin-top: 10px;
-    padding: 0px;
-    min-height : 350px;
-	margin-left :75px;
+    width: 75%;
+    max-width: 1000px;
+    position: absolute;
+    left: auto;
 }
 
-article h3{
+article h2
+{
     margin: 5px;
     margin-left: 15px;
     color:darkred;
 }
-article p{
+
+article p
+{
+    border: solid 1px;
+    max-width: 50%;
     margin-top: 2px;
     margin-left: 15px;
     margin-right: 10px;
@@ -117,21 +126,16 @@ article p{
     color: aliceblue;
 }
 
-article img{
-    float : right;
-	padding-right : 3px;
-    padding-left: 3px;
-	max-height: 150px;
-    display: inline-block;
-}
-
-
-
-aside 
+article img
 {
-	float : left;
-    padding: 0px 7px;
+	max-height: 350px;
+    max-width: 250px;
+    float: right;
+    margin-right: 3%;
+    
 }
+
+
 
 footer 
 {
@@ -139,38 +143,48 @@ footer
     clear: both;
     text-align: center;
 }
+
+/*Screen*/
 @media(max-width: 500px){
     article img{
-        max-width: 200px
+        width: 200px
     }
 }
 
 @media(max-width: 600px){
+    
     heading h1{
     text-align: center;
     }
     heading h2 {
         text-align: center;
     }
-    article img{
-        float: none;
-        margin-left: 20px;
-    }
-    
     article{
 	margin-left :0px;
     }
+    article img{
+        display: none;
+    }
+    article p{
+        max-width: 100%;
+    }
+    
 }
 
 @media(max-width: 800px){
     article img{
         float: none;
-        margin-left: 20px;
+        margin-left: 100px;
+        
+    }
+    article p{
+        min-width: 80%;
     }
 }
 
     @media screen and (max-width: 600px)
 {
+
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
