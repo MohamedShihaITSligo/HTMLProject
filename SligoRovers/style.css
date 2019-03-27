@@ -8,6 +8,7 @@
 body
 {
     background-color: #464646;
+    
 }
 
 heading 
@@ -15,20 +16,23 @@ heading
     width: 100%;
 }
 
+heading section{
+    background-image: url(image/heading.jpg);
+    height: 200px;
+}
+
 heading img
 {
     max-height: 110px;
     max-width: 110px;
-    padding-bottom: 10px;
+    padding :20px;
     float: left;
-    margin-left: 10px;
-    padding-left: 10px;
 }
 
 heading h1
 {
     color: darkred;
-    padding: 13px 10px 0px 10px ;
+    padding: 35px 10px 0px 10px ;
     margin-bottom: 0px;
     padding-right: 25%;
     text-align: right;
@@ -57,26 +61,26 @@ menu
     overflow: hidden;
     background-color: #333;
     width: 100%;
-    padding: 1px;
-    margin: 0;
+    padding: 3px;
+    margin: 3px;
 }
 
 .topnav a 
 {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-weight:bold;
+    display: inline-block;
+    color: snow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight:bold;
+    align-self: center;
+    width: 24%;
 }
 
 .topnav a:hover 
 {
     background-color: darkred;
     color: gray;
-    font-size: 18px;
 }
 
 .active 
@@ -95,15 +99,13 @@ main
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 10px;
+    padding-bottom: 3px;
+    background-color: dimgray;
 }
 
 article
 {
-    background-color: 	dimgray;
     width: 75%;
-    max-width: 1000px;
-    position: absolute;
-    left: auto;
 }
 
 article h2
@@ -115,15 +117,15 @@ article h2
 
 article p
 {
-    border: solid 1px;
-    max-width: 50%;
     margin-top: 2px;
     margin-left: 15px;
     margin-right: 10px;
-    padding: 15px;
-    padding-left: 3px;
+    padding: 3px;
     font-size: 17px;
-    color: aliceblue;
+    color: snow;
+    font-weight: 540;
+    width: inherit;
+    overflow-wrap: break-word; 
 }
 
 article img
@@ -131,8 +133,6 @@ article img
 	max-height: 350px;
     max-width: 250px;
     float: right;
-    margin-right: 3%;
-    
 }
 
 
@@ -142,40 +142,42 @@ footer
     width: 100%;
     clear: both;
     text-align: center;
+    position: static;
+    margin: 0px;
+    padding: 0px;
 }
-/* the players page */
-/* Three columns side by side */
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
 section img {
     width: 100%;
 }
 
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* the players page */
+.flag{
+    width: 20px;
+    
+}
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 4px;
+    padding: 0 4px;
+    max-width: 40%;
+    text-overflow: clip;
 }
 
-/* Some left and right padding inside the container */
+
+/* Some left and right padding inside the container 
 .container {
   padding: 0 16px;
 }
 
-/* Clear floats */
+/* Clear floats 
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
-.title {
-  color: grey;
-}
+*/
 
 .button {
   border: none;
@@ -193,14 +195,173 @@ section img {
   background-color: #555;
 }
 
+/*Players page*/
+* {
+  box-sizing: border-box;
+}
 
+.row {
+  margin: 4px -16px;
+      display: none; /* Hide columns by default */
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 5px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 5px;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+#myBtnContainer {
+    min-width: 410px;
+    margin-left: -30px;
+}
+
+.PlayerName {
+    text-align: center;
+    border: solid 1px gray;
+    font-weight: 300;
+}
+
+.Nationality {
+    display: inline;
+    font-size: 15px;
+}
+
+.content p{
+    font-size: 90%;
+}
+
+.posHeader h6{
+    height: 22px;
+    background-color: aliceblue;
+    padding: 3px;
+    padding-left: 7px;
+    margin: 0px;
+}
+
+
+.artical {
+    margin: 4px -16px;
+    border: solid 2px white;
+    padding-right: 10px;
+}
+
+
+.card {
+    content: "";
+    clear: both;
+    display: table;
+    box-shadow: 0 6px 10px 0 rgba(1, 1, 1, 0.9);
+    margin: 1px;
+    padding: 3px;
+    width: 100%;
+}
+.card h6 {
+    margin: 0px;
+    padding: 3px;
+    padding-left: 7px;
+    color: darkred;
+}
+
+.videos .row .column{
+    width: 100%;
+    margin: 7px;
+    align-content: center;
+    max-width: 400%;
+    padding: 0px;
+}
+
+/*trophies page*/
+/* Style the button that is used to open and close the collapsible data */
+.collapsible {
+    margin: 0px;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-top-style: solid;
+    border-top-width: 2px ;
+    border-top-color: darkblue;
+}
+
+
+.clicked, .collapsible:hover {
+  background-color: #ffe1;
+}
+
+/*  collapsible content.*/
+.data {
+    margin: 1px;
+    margin-top: 0px;
+    padding: 0px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffe1;
+    border-bottom: solid 3px darkred;
+    border-top: solid 3px darkred;
+}
 /*Screen*/
 
 /* Display the columns below each other instead of side by side on small screens in players page */
 @media screen and (max-width: 650px) {
   .column {
-    width: 100%;
+    width: 25%;
     display: block;
+      max-width: 35%;
   }
 }
 
@@ -218,14 +379,9 @@ section img {
     heading h2 {
         text-align: center;
     }
-    article{
-	margin-left :0px;
-    }
+
     article img{
         display: none;
-    }
-    article p{
-        max-width: 100%;
     }
     
 }
@@ -233,11 +389,7 @@ section img {
 @media(max-width: 800px){
     article img{
         float: none;
-        margin-left: 100px;
-        
-    }
-    article p{
-        min-width: 80%;
+        margin: 20px
     }
 }
 
@@ -265,4 +417,15 @@ section img {
     display: block;
     text-align: left;
   }
+}
+
+
+
+
+
+
+
+button h5 {
+    margin: 0px;
+    padding: 0px;
 }
