@@ -2,8 +2,9 @@
 * 
 {
     font-family: Arial, Helvetica, sans-serif;
-    
+    border: none;
 }
+
 
 body
 {
@@ -14,13 +15,13 @@ body
     color:darkred;
 }
 
-heading 
+header 
 {
     width: 100%;
 }
 
-heading section{
-    background-image: url(image/heading.jpg);
+.HeaderBox{
+    background-image: url(/image/heading.jpg);
     height: 200px;
     max-height: 250px;
     background-repeat: no-repeat;
@@ -28,7 +29,7 @@ heading section{
     background-size: cover;
 }
 
-heading img
+header img
 {
     max-height: 210px;
     max-width: 210px;
@@ -36,7 +37,7 @@ heading img
     float: left;
 }
 
-heading h1,heading h2
+header h1,header h2
 {
     color: darkred;
     font-size: 200%;
@@ -48,22 +49,26 @@ heading h1,heading h2
     text-shadow: 2px 2px 1px black;
 }
 
-heading h1:hover,heading h2:hover{
-            text-shadow: 3px 3px 5px white;
+header h1:hover,header h2:hover{
+    text-shadow: 3px 3px 5px white;
 }
 
-heading h2
+header h2
 {
     padding: 0px;
     margin-top: 0px;
     padding-right: 25%;
 }
 
-menu
+.mainBox
 {
     padding: 0;
     margin: 0;
-    height: 75px
+    height: 75px;
+}
+figure {
+    padding: 0px;
+    margin: 0px;
 }
 
 .topnav 
@@ -73,6 +78,7 @@ menu
     width: 100%;
     padding: 3px;
     margin: 3px;
+    background-color: gray
 }
 
 .topnav a 
@@ -83,8 +89,6 @@ menu
     padding: 14px 16px;
     text-decoration: none;
     font-weight:bold;
-    align-self: center;
-    width: 19.6%;
 }
 
 .topnav a:hover 
@@ -93,6 +97,15 @@ menu
     color: gray;
 }
 
+.fullWidth {
+    width: 100%;
+    height: auto;
+    background-color: #464646;
+}
+
+.fullWidth a {
+    width:19%;
+}
 .active 
 {
   background-color: dimgray;
@@ -247,10 +260,12 @@ section img {
 .btn {
     border: none;
     outline: none;
-    padding: 10px 20px;
+    padding: 2px 2px;
     background-color: white;
     cursor: pointer;
     margin-left: 10px;
+    width: 17%;
+    margin: 1px 2px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -264,9 +279,7 @@ section img {
    color: white;
 }
 
-#myBtnContainer {
-    margin-left: 0px;
-}
+
 
 .PlayerName {
     text-align: center;
@@ -282,7 +295,7 @@ section img {
     font-size: 90%;
 }
 
-.posHeader h6{
+.posHeader h4{
     height: 27px;
     background-color: rgb(10,15,20);
     padding: 5px;
@@ -294,7 +307,7 @@ section img {
 }
 
 
-.artical {
+.imgBox {
     margin: 4px -16px;
     border: solid 2px white;
     padding-right: 10px;
@@ -350,7 +363,6 @@ section img {
     padding: 7px;
     border: none;
     text-align: left;
-    display: non
     outline: none;
     font-size: 15px;
     border-top-style: solid;
@@ -412,6 +424,23 @@ button h5 {
 .subData p {
     padding: 10px;
 }
+/*find us page*/
+
+.map {
+    width: 75%;
+    height: 350px;
+    margin: 3% 10%px;
+}
+
+iframe {
+    width:100%;
+    height: 100%;
+}
+
+#myBtnContainer {
+    width: 90%;
+}
+
 /*Screen*/
 
 
@@ -421,16 +450,13 @@ button h5 {
         margin: 0px;
         padding: 4px;
     }
-    #myBtnContainer{
-       
-    }
-}
 
+}
 
 
 @media(max-width: 600px){
     
-    heading h1 , heading h2{
+    header h1 , header h2{
      text-align: right;
         padding-right: 10%;
         padding-left: 2px;
@@ -440,11 +466,6 @@ button h5 {
         display: none;
     }
     
-}
-
-
-@media screen and (max-width: 600px) 
-{
     .topnav a {display: none;}
     .topnav a.icon {
         float: right;
@@ -478,6 +499,10 @@ button h5 {
         padding-right: 10%;
         padding-left: 10%;
     }
+    .btn{
+        width: 25%;
+        margin-top:2px;
+    }
 }
 
 @media(max-width: 800px){
@@ -485,8 +510,10 @@ button h5 {
         float: none;
         margin: 20px
     }
-    
 }
+
+
+
 
 
 

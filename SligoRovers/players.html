@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Sligo Rovers Fan Clup - Players</title>
+    <title>Sligo Rovers Fan Clup</title>
 <!--    <link rel="stylesheet" type="text/css" href="reset.css">-->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="icon" href="image/favicon.png" sizes="32x32">
 </head>
 <body>
-    <heading>
-        <section>
-            <a href="index.html" ><img src="image/Logo.png"></a>
+    <header>
+        <section class="HeaderBox">
+            <a href="index.html" ><img src="image/Logo.png" alt="Logo"></a>
             <h1>Sligo Rovers </h1>
             <h2>Fan Club</h2>
         </section>
-        <menu>
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" >Home</a>
-                <a href="players.html" >Players</a>
-                <a href="Videos.html" >Videos</a>
-                <a href="History.html" >History</a>
-                <a href="FindUs.html"class="active">Find Us</a>
-                <a href="javascript:void(0);" class="icon" onclick="Responsive()">
-                    <i class="fa fa-bars"> </i>
-                </a>
-            </div>
-        </menu>
-    </heading>
-    
+        <section class="mainBox">
+            <figure class="topnav" id="myTopnav">
+                <figure class="fullWidth">
+                    <a href="index.html" >Home</a>
+                    <a href="players.html" class="active">Players</a>
+                    <a href="Videos.html" >Videos</a>
+                    <a href="History.html" >History</a>
+                    <a href="FindUs.html" >Find Us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="Responsive()">
+                        <i class="fa fa-bars"> </i>
+                    </a>                
+                </figure>
+            </figure>
+        </section>
+    </header>
         <main>
             <section>
                 <h3 class="redText">Meet the team </h3>
@@ -42,13 +43,13 @@
             </section>
             <!--Plyers-->
             <section class="row goalkeeper">
-                <section class="posHeader hide" >
-                    <h6 class="goalkeeper">Goallkeepers</h6>
-                </section>
+                <figure class="posHeader hide" >
+                    <h4 class="goalkeeper">Goallkeepers</h4>
+                </figure>
               <section class="column goalkeeper">
                 <section class="content">
                   <img src="image/Players/mitchell.jpg" alt="Goalkeeper">
-                      <h4 class="PlayerName"> Mitchell Beeney</h4>
+                      <p class="PlayerName"> Mitchell Beeney</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/eng.png" alt="England"> England </p>
                         <p><strong>Position:</strong> Goalkeeper</p>
@@ -59,7 +60,7 @@
             <section class="column goalkeeper">
                 <section class="content">
                   <img src="image/Players/Ed.jpg" alt="Goalkeeper">
-                      <h4 class="PlayerName"> Ed McGinty</h4>
+                      <p class="PlayerName"> Ed McGinty</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Goalkeeper</p>
@@ -70,7 +71,7 @@
                 <section class="column goalkeeper">
                 <section class="content">
                   <img src="image/Players/luke.jpg" alt="Goalkeeper">
-                      <h4 class="PlayerName"> Ed McGinty</h4>
+                      <p class="PlayerName"> Ed McGinty</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Goalkeeper</p>
@@ -80,13 +81,13 @@
               </section>
             </section><!--end goalkeeper row -->
             <section class="row defender">
-                <section class="posHeader hide" >
-                    <h6>Defender</h6>
-                </section>
+                <figure class="posHeader hide" >
+                    <h4>Defenders</h4>
+                </figure>
               <section class="column defender">
                 <section class="content">
                   <img src="image/Players/John.jpg" alt="Defender">
-                      <h4 class="PlayerName">John Mahon</h4>
+                      <p class="PlayerName">John Mahon</p>
                     <p><strong>Nationality:</strong> 
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                     <p><strong>Position:</strong> Defender</p>
@@ -97,7 +98,7 @@
               <section class="column defender">
                 <section class="content">
                   <img src="image/Players/Dante.jpg" alt="Defender">
-                      <h4 class="PlayerName"> Dante Leverock</h4>
+                      <p class="PlayerName"> Dante Leverock</p>
                         <p><strong>Nationality:</strong> 
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/ber.png" alt="Bermuda"> Bermuda </p>
                         <p><strong>Position:</strong> Defender</p>
@@ -108,7 +109,7 @@
                 <section class="column defender">
                 <section class="content">
                   <img src="image/Players/kyle.jpg" alt="Defender">
-                      <h4 class="PlayerName"> Kyle McFadden</h4>
+                      <p class="PlayerName"> Kyle McFadden</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Defender</p>
@@ -121,7 +122,7 @@
               <section class="column defender">
                 <section class="content">
                   <img src="image/Players/Regan.jpg" alt="Defender">
-                      <h4 class="PlayerName">Regan Donelan</h4>
+                      <p class="PlayerName">Regan Donelan</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Defender</p>
@@ -132,7 +133,7 @@
             <section class="column defender">
                 <section class="content">
                   <img src="image/Players/lewis.jpg" alt="Defender">
-                      <h4 class="PlayerName"> Lewis Banks</h4>
+                      <p class="PlayerName"> Lewis Banks</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/eng.png" alt="England"> England </p>
                         <p><strong>Position:</strong> Defender</p>
@@ -143,7 +144,7 @@
                 <section class="column defender">
                 <section class="content">
                   <img src="image/Players/johnny.jpg" alt="Defender">
-                      <h4 class="PlayerName">Johnny Dunleavy</h4>
+                      <p class="PlayerName">Johnny Dunleavy</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/eng.png" alt="England"> England </p>
                         <p><strong>Position:</strong> Defender</p>
@@ -153,13 +154,13 @@
               </section>
             </section><!--end defenders row -->
             <section class="row midfielder">
-                <section class="posHeader hide" >
-                    <h6>Midfielders</h6>
-                </section>
+                <figure class="posHeader hide" >
+                    <h4>Midfielders</h4>
+                </figure>
                 <section class="column midfielder">
                     <section class="content">
                         <img src="image/Players/Niall.jpg" alt="Midfielder">
-                        <h4 class="PlayerName">Niall Morahan</h4>
+                        <p class="PlayerName">Niall Morahan</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland">Ireland</p>
                         <p><strong>Position:</strong> Midfielder</p>
@@ -170,7 +171,7 @@
                 <section class="column midfielder">
                     <section class="content">
                         <img src="image/Players/Liam.jpg" alt="Midfielder">
-                            <h4 class="PlayerName">Liam Kerrigan</h4>
+                            <p class="PlayerName">Liam Kerrigan</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Midfielder</p>
@@ -181,7 +182,7 @@
                 <section class="column midfielder">
                     <section class="content">
                         <img src="image/Players/David.jpg" alt="Midfielder">
-                        <h4 class="PlayerName">David Cawley</h4>
+                        <p class="PlayerName">David Cawley</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland">Irelands</p>
                         <p><strong>Position:</strong> Midfielder</p>
@@ -194,7 +195,7 @@
                 <section class="column midfielder">
                     <section class="content">
                         <img src="image/Players/jack.jpg" alt="Midfielder">
-                        <h4 class="PlayerName">Jack Keaney</h4>
+                        <p class="PlayerName">Jack Keaney</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Midfielder</p>
@@ -205,7 +206,7 @@
                 <section class="column midfielder">
                     <section class="content">
                         <img src="image/Players/russell.jpg" alt="Midfielder">
-                            <h4 class="PlayerName">John Russell</h4>
+                            <p class="PlayerName">John Russell</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Ireland"> Ireland </p>
                         <p><strong>Position:</strong> Midfielder</p>
@@ -216,7 +217,7 @@
                 <section class="column midfielder">
                     <section class="content">
                         <img src="image/Players/kris.jpg" alt="Midfielder">
-                        <h4 class="PlayerName">Kris Twardek</h4>
+                        <p class="PlayerName">Kris Twardek</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/can.png" alt="Canada">Canada</p>
                         <p><strong>Position:</strong> Midfielder</p>
@@ -226,13 +227,13 @@
                 </section>
             </section><!--end midfielder row -->
             <section class="row forward">
-                <section class="posHeader hide" >
-                    <h6>Forwarders</h6>
-                </section>
+                <figure class="posHeader hide" >
+                    <h4>forwarders</h4>
+                </figure>
                 <section class="column forward">
                     <section class="content">
                         <img src="image/Players/ronanC.jpg" alt="Forward">
-                        <h4 class="PlayerName">Ronan Coughlan</h4>
+                        <p class="PlayerName">Ronan Coughlan</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Irelands">Irelands</p>
                         <p><strong>Position:</strong> Forward</p>
@@ -243,7 +244,7 @@
                 <section class="column forward">
                     <section class="content">
                         <img src="image/Players/romeo.jpg" alt="Forward">
-                        <h4 class="PlayerName">Romeo Parkes</h4>
+                        <p class="PlayerName">Romeo Parkes</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/jam.png" alt="Irelands">Jamaica</p>
                         <p><strong>Position:</strong> Forward</p>
@@ -254,7 +255,7 @@
                 <section class="column forward">
                     <section class="content">
                         <img src="image/Players/Darren.jpg" alt="Forward">
-                        <h4 class="PlayerName">Darren Collins</h4>
+                        <p class="PlayerName">Darren Collins</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Irelands">Irelands</p>
                         <p><strong>Position:</strong> Forward</p>
@@ -265,7 +266,7 @@
                 <section class="column forward">
                     <section class="content">
                         <img src="image/Players/ronan.jpg" alt="Forward">
-                        <h4 class="PlayerName">Ronan Murray</h4>
+                        <p class="PlayerName">Ronan Murray</p>
                         <p><strong>Nationality:</strong>  
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/irl.png" alt="Irelands">Irelands</p>
                         <p><strong>Position:</strong> Forward</p>
@@ -280,6 +281,6 @@
             <a href="https://www.w3schools.com/" target="_blank">Credit to w3school</a>            
         </p>
         </footer>
-    <script src="Scripts.js"></script>
+     <script src="script/Scripts.js"></script>
 </body>
 </html>
