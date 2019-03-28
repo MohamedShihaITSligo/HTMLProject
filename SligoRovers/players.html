@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="image/favicon.png" sizes="32x32">
 </head>
 <body>
@@ -17,18 +16,23 @@
             <h2>Fan Club</h2>
         </section>
         <menu>
-            <nav class="topnav" id="myTopnav">
+            <div class="topnav" id="myTopnav">
                 <a href="index.html" >Home</a>
-                <a href="#" class="active">Players</a>
-                <a href="Videos.html">Videos</a>
-                <a href="history.html">History</a>
+                <a href="players.html" >Players</a>
+                <a href="Videos.html" >Videos</a>
+                <a href="History.html" >History</a>
+                <a href="FindUs.html"class="active">Find Us</a>
                 <a href="javascript:void(0);" class="icon" onclick="Responsive()">
                     <i class="fa fa-bars"> </i>
                 </a>
-            </nav>
+            </div>
         </menu>
     </heading>
+    
         <main>
+            <section>
+                <h3 class="redText">Meet the team </h3>
+            </section>
             <section id="myBtnContainer">
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('goalkeeper')"> Goalkeeper</button>
@@ -93,7 +97,7 @@
               <section class="column defender">
                 <section class="content">
                   <img src="image/Players/Dante.jpg" alt="Defender">
-                      <h4 class="PlayerName"> name</h4>
+                      <h4 class="PlayerName"> Dante Leverock</h4>
                         <p><strong>Nationality:</strong> 
                         <img class="flag" src="https://www.sligorovers.com/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/ber.png" alt="Bermuda"> Bermuda </p>
                         <p><strong>Position:</strong> Defender</p>
@@ -271,11 +275,11 @@
                 </section>
             </section><!--end Forward row -->
     </main>
-    <footer>
+     <footer>
         <p>
-            Credit to w3school
+            <a href="https://www.w3schools.com/" target="_blank">Credit to w3school</a>            
         </p>
-    </footer>
+        </footer>
     <script src="Scripts.js"></script>
 </body>
 </html>
